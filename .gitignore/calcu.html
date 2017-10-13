@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body class="container" ng-app="" >
+	<div class="col-lg-6 col-sm-6 col-md-5 col-xs-6">
+	</script>
+	<div class="container-fluid">
+		<tr class="col-sm-12"><h1 style="text-align: center;background-color: blue;color: white" class="col-lg-12 col-sm-12 col-md-5 col-xs-12"> Calculator</h1></tr>
+		<table class="col-lg-12 col-sm-12 col-md-5" style="background-color:silver;color: white">
+			
+            <br>
+
+			<tr >
+                  <form name="form">
+                  	<div style="text-align: center;background-color: silver">
+                       
+                       <input class="col-lg-12 col-sm-12 col-md-3 text-responsive" style="text-align: center;height: 70px;font-size: 17px" placeholder="0" type="text" name="submit" >
+                       <br>
+                    </div></tr>
+                 
+				
+			<tr></tr>
+		<tr class="col-lg-12 col-sm-12"><td class="col-lg-6 col-sm-6">
+             <div>
+			<button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px" value="1" id="1"  >1</button>
+            <button class="btn btn-primary"  style="height: 35px;width: 35px;font-size: 20px" value="2" id="2"  >2</button>
+            <button class="btn btn-primary"  style="height: 35px;width: 35px;font-size: 20px" value="3" id="3"  >3</button>
+			<button class="btn btn-success"  style="height: 35px;width: 35px;font-size: 20px" value="+" id="plus"  >+</button>
+			<button class="btn btn-success"  style="height: 35px;width: 35px;font-size: 30px;font-size: 20px" value="%" id="modulus"  >%</button>
+			            
+             
+
+             <br><br>
+            <button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px" style="height: 100px" value="4" id="4"  >4</button>
+            <button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px" value="5" id="5"  >5</button>
+            <button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px;font-size: 20px" value="6" id="6"  >6</button>
+			<button class="btn btn-success"  style="height: 35px;width: 35px;font-size: 30px;font-size: 20px" value="*" id="multiply"  >*</button>
+			            <button class="btn btn-danger" style="height: 35px;width: 40px;font-size: 20px" onclick="document.form.submit.value='Answer = '+eval(document.form.submit.value);">=</button>
+             
+
+            <br><br>
+            <button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px" value="7" id="7"  >7</button>
+            <button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px;font-size: 20px;font-size: 20px" value="8" id="8"  >8</button>
+            <button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px;font-size: 20px" value="9" id="9"  >9</button>
+			 <button class="btn btn-success" style="height: 40px;width: 35px;font-size: 30px" value="-" id="minus"  >-</button>
+			 <button class="btn btn-danger" style="height: 40px;width: 35px;font-size: 20px" id="clear">C</button>
+            <br><br>
+            <button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px;font-size: 20px" value="00" id="tzero"  >00</button>
+            <button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px;font-size: 20px" value="0" id="zero"  >0</button>
+            <button class="btn btn-primary" style="height: 35px;width: 35px;font-size: 20px;font-size: 20px" value="." id="dot"  >.</button>
+			 <button class="btn btn-success" style="height: 35px;width: 35px;font-size: 20px" value="/" id="divide"  >/</button>
+			</div>
+			</td>
+
+			<td class="col-lg-6 col-sm-6">
+				 
+            
+          
+           
+           
+
+            <br><br>
+            
+            <br>
+            <br>
+            
+
+             </form>
+               
+			</td>
+
+		</tr>
+
+
+            
+
+		</table>
+
+
+	</div>
+	<script>
+		$(document).ready(function(){
+         $("#1").click(function(){
+         	document.form.submit.value+="1";
+         });
+          $("#2").click(function(){
+document.form.submit.value+="2";
+         	
+         });
+ $("#3").click(function(){
+document.form.submit.value+="3";
+         	
+         });
+ $("#4").click(function(){
+         	document.form.submit.value+="4";
+         });
+ $("#5").click(function(){
+document.form.submit.value+="5";
+         	
+         });
+ $("#6").click(function(){
+         	document.form.submit.value+="6";
+         });
+ $("#7").click(function(){
+document.form.submit.value+="7";
+         	
+         });
+ $("#8").click(function(){
+document.form.submit.value+="8";
+         	
+         });
+  $("#9").click(function(){
+document.form.submit.value+="9";
+         	
+         });
+  $("#zero").click(function(){
+document.form.submit.value+="0";
+            
+         });
+  $("#tzero").click(function(){
+document.form.submit.value+="00";
+            
+         });
+  $("#dot").click(function(){
+document.form.submit.value+=".";
+            
+         });
+  $("#plus").click(function(){
+document.form.submit.value+="+";
+         	
+         });
+ $("#minus").click(function(){
+         	document.form.submit.value+="-";
+         });
+ $("#multiply").click(function(){
+         	document.form.submit.value+="*";
+         });
+  $("#divide").click(function(){
+         	document.form.submit.value+="/";
+         });
+  $("#modulus").click(function(){
+            document.form.submit.value+="%";
+         });
+ 
+$("#clear").click(function(){
+    document.form.submit.value="";
+});
+		});
+		
+	</script>
+</div>
+</body>
+
+</html>
